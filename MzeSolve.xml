@@ -25,13 +25,7 @@
           </block>
         </value>
         <statement name="DO0">
-          <block type="movement_rightmotor" id="300" inline="true">
-            <value name="MOVRIGHT">
-              <block type="math_number" id="301">
-                <field name="NUM">50</field>
-              </block>
-            </value>
-          </block>
+          <block type="movement_right" id="322"></block>
         </statement>
         <value name="IF1">
           <block type="logic_compare" id="65" inline="true">
@@ -49,13 +43,7 @@
           </block>
         </value>
         <statement name="DO1">
-          <block type="movement_leftmotor" id="243" inline="true">
-            <value name="MOVLEFT">
-              <block type="math_number" id="254">
-                <field name="NUM">50</field>
-              </block>
-            </value>
-          </block>
+          <block type="movement_left" id="311"></block>
         </statement>
         <value name="IF2">
           <block type="logic_compare" id="209" inline="true">
@@ -73,13 +61,7 @@
           </block>
         </value>
         <statement name="DO2">
-          <block type="movement_rightmotor" id="279" inline="true">
-            <value name="MOVRIGHT">
-              <block type="math_number" id="253">
-                <field name="NUM">50</field>
-              </block>
-            </value>
-          </block>
+          <block type="movement_right" id="323"></block>
         </statement>
         <value name="IF3">
           <block type="logic_compare" id="212" inline="true">
@@ -97,13 +79,7 @@
           </block>
         </value>
         <statement name="DO3">
-          <block type="movement_leftmotor" id="244" inline="true">
-            <value name="MOVLEFT">
-              <block type="math_number" id="252">
-                <field name="NUM">50</field>
-              </block>
-            </value>
-          </block>
+          <block type="movement_left" id="312"></block>
         </statement>
         <statement name="ELSE">
           <block type="movement_forward" id="160"></block>
