@@ -50,12 +50,7 @@
                           </block>
                         </value>
                         <statement name="DO0">
-                          <block type="movement_rightmotor" id="109" inline="true">
-                            <value name="MOVRIGHT">
-                              <block type="math_number" id="110">
-                                <field name="NUM">100</field>
-                              </block>
-                            </value>
+                          <block type="movement_right" id="121">
                             <next>
                               <block type="led_select" id="13" inline="true">
                                 <field name="ACTION">FLASH</field>
@@ -94,9 +89,14 @@
                           </block>
                         </value>
                         <statement name="DO1">
-                          <block type="movement_leftmotor" id="92" inline="true">
-                            <value name="MOVLEFT">
-                              <block type="math_number" id="111">
+                          <block type="movement_setmotors" id="131" inline="true">
+                            <value name="BOTHMOVLEFT">
+                              <block type="math_number" id="132">
+                                <field name="NUM">0</field>
+                              </block>
+                            </value>
+                            <value name="BOTHMOVRIGHT">
+                              <block type="math_number" id="133">
                                 <field name="NUM">100</field>
                               </block>
                             </value>
@@ -138,7 +138,17 @@
                           </block>
                         </value>
                         <statement name="DO2">
-                          <block type="movement_right" id="36">
+                          <block type="movement_setmotors" id="134" inline="true">
+                            <value name="BOTHMOVLEFT">
+                              <block type="math_number" id="136">
+                                <field name="NUM">100</field>
+                              </block>
+                            </value>
+                            <value name="BOTHMOVRIGHT">
+                              <block type="math_number" id="135">
+                                <field name="NUM">0</field>
+                              </block>
+                            </value>
                             <next>
                               <block type="led_select" id="37" inline="true">
                                 <field name="ACTION">FLASH</field>
