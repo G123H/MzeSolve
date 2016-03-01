@@ -33,7 +33,7 @@
                     </value>
                     <statement name="DO">
                       <block type="controls_if" id="8" inline="false">
-                        <mutation elseif="2" else="1"></mutation>
+                        <mutation elseif="3" else="1"></mutation>
                         <value name="IF0">
                           <block type="logic_compare" id="9" inline="true">
                             <field name="OP">LT</field>
@@ -74,6 +74,45 @@
                           </block>
                         </statement>
                         <value name="IF1">
+                          <block type="logic_compare" id="144" inline="true">
+                            <field name="OP">LT</field>
+                            <value name="A">
+                              <block type="sensor_object" id="145">
+                                <field name="OBJECT">RIGHTFRONT</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="variables_get" id="146">
+                                <field name="VAR">i</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO1">
+                          <block type="movement_left" id="160">
+                            <next>
+                              <block type="led_select" id="147" inline="true">
+                                <field name="ACTION">FLASH</field>
+                                <value name="LED">
+                                  <block type="math_number" id="148">
+                                    <field name="NUM">5</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="led_select" id="149" inline="true">
+                                    <field name="ACTION">FLASH</field>
+                                    <value name="LED">
+                                      <block type="math_number" id="150">
+                                        <field name="NUM">4</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </statement>
+                        <value name="IF2">
                           <block type="logic_compare" id="25" inline="true">
                             <field name="OP">GT</field>
                             <value name="A">
@@ -88,7 +127,7 @@
                             </value>
                           </block>
                         </value>
-                        <statement name="DO1">
+                        <statement name="DO2">
                           <block type="movement_setmotors" id="131" inline="true">
                             <value name="BOTHMOVLEFT">
                               <block type="math_number" id="132">
@@ -122,7 +161,7 @@
                             </next>
                           </block>
                         </statement>
-                        <value name="IF2">
+                        <value name="IF3">
                           <block type="logic_compare" id="33" inline="true">
                             <field name="OP">LT</field>
                             <value name="A">
@@ -137,7 +176,7 @@
                             </value>
                           </block>
                         </value>
-                        <statement name="DO2">
+                        <statement name="DO3">
                           <block type="movement_setmotors" id="134" inline="true">
                             <value name="BOTHMOVLEFT">
                               <block type="math_number" id="136">
